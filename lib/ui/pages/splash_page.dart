@@ -11,7 +11,9 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(Duration(seconds: 3)).then((value) async {});
+    Future.delayed(Duration(seconds: 3)).then((value) async {
+      Get.offAll(LoginPage());
+    });
   }
 
   @override
@@ -26,9 +28,9 @@ class _SplashPageState extends State<SplashPage> {
             width: double.infinity,
             height: deviceHeight(context) - 150,
             alignment: Alignment.center,
-            child: FlutterLogo(),
+            child: LogoWidget(),
           ),
-          Text('Buat petualanganmu sendiri',
+          Text('Pelanggan puas kami lemas',
               style: fontBlack.copyWith(
                 color: Colors.black54,
               ))
