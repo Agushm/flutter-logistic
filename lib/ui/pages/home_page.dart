@@ -28,7 +28,9 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               btnMainMenu(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(TransactionInPage());
+                  },
                   btnText: 'Transaksi Masuk',
                   icon: Icons.login),
               SizedBox(width: 20),
